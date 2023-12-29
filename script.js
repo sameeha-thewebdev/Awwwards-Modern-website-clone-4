@@ -182,7 +182,6 @@ function page8() {
     scrollTrigger: {
       trigger: ".upper-page8",
       scroller: "#main",
-      markers: true,
       scrub: true,
       start: "top center",
       end: "top top"
@@ -195,7 +194,6 @@ function page8() {
     scrollTrigger: {
       trigger: ".lower-page8",
       scroller: "#main",
-      markers: 3,
       scrub: 5,
       start: "top 90%",
       end: "bottom bottom",

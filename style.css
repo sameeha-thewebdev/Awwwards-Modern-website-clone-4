@@ -254,6 +254,12 @@ nav h3 {
   height: 60%;
 }
 
+.page-6 h3{
+    color: #fff;
+    position: absolute;
+    font-weight: 200;
+}
+
 .page-7 {
   height: 100vh;
   width: 100%;
