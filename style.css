@@ -1,0 +1,396 @@
+@font-face {
+  font-family: nb;
+  src: url(./NBInternationalProBoo.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: nb;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.page-1 {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.page-1 video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.cursor {
+  opacity: 0;
+  height: 7vw;
+  width: 7vw;
+  background-color: #fb5e37;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cursor > h4 {
+  font-weight: 200;
+}
+
+.page1-content {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+nav {
+  height: 100px;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3vw;
+}
+
+nav h3 {
+  font-weight: 200;
+}
+
+.page1-content h1 {
+  color: #fff;
+  left: 50%;
+  position: absolute;
+  bottom: 0;
+  font-size: 20vw;
+}
+
+.page1-content > h1 > span {
+  font-family: "rejouice headline";
+  display: inline-block;
+}
+
+.page-2 {
+  height: 100vh;
+  width: 100%;
+  padding: 0 30px;
+  position: relative;
+}
+
+.page-2 .upper,
+.page5-upper {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+  padding-bottom: 20px;
+  align-items: flex-end;
+  border-bottom: 1px solid black;
+}
+
+.elem,
+.elem2,
+.elem3 {
+  overflow: hidden;
+  position: relative;
+}
+
+.upper h4,
+.page5-upper h4 {
+  font-size: 1.8vmax;
+  font-weight: 200;
+}
+
+.page-2 .lower,
+.page5-lower {
+  padding: 30px 0;
+}
+
+.elem h1,
+.elem3 h1 {
+  font-size: 4vmax;
+  font-weight: 300;
+}
+
+.page-3 {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.page3-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.page3-container h4 {
+  font-weight: 200;
+}
+
+.page3-container h1 {
+  text-align: center;
+  font-size: 4vmax;
+  font-weight: 400;
+  border-bottom: 3px solid black;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.line {
+  height: 4px;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  bottom: 3.2px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  z-index: 2;
+}
+
+/* .elem2:hover .line{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+} */
+
+.page-4 {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  padding: 0 30px;
+}
+
+.page4-upper {
+  height: 9%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page4-upper > h4 {
+  color: #212121;
+  font-weight: 200;
+  font-size: 1.6vmax;
+}
+
+.page4-container {
+  height: 89%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page4-container > .box {
+  height: 100%;
+  width: 32.8%;
+  position: relative;
+}
+
+.box > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  cursor: pointer;
+  z-index: 99;
+  transition: opacity 1s ease-out;
+}
+
+.box > video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.box > img:hover {
+  opacity: 0;
+}
+
+.page-5 {
+  height: 90vh;
+  width: 100%;
+  position: relative;
+  padding: 0 30px;
+}
+
+.page-6 {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-6 > video {
+  height: 100%;
+  width: 60%;
+}
+
+.page-6 > svg {
+  position: absolute;
+  height: 60%;
+}
+
+.page-7 {
+  height: 100vh;
+  width: 100%;
+  padding: 50px 0;
+  position: relative;
+  z-index: 99;
+  background-color: #fff;
+}
+
+.upper-page7 > h1 {
+  font-size: 10vw;
+  font-family: "rejouice headline";
+  font-weight: 200;
+  margin-left: 2%;
+  width: 96%;
+  border-bottom: 2px solid #0e0e0e;
+  color: #0e0e0e;
+}
+
+#swiper-div {
+  height: 63vh;
+  width: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-top: -50px;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+#loader{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background-color: #0e0e0e;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+}
+
+#loader h3{
+    font-size: 2vw;
+    color: #fff;
+    font-weight: 500;
+}
+
+.page-8{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: #0e0e0e;
+    padding: 45px 40px;
+}
+
+.upper-page8{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #DEDBD2;
+    position: relative;
+    background-color: #0e0e0e;
+    z-index: 2;
+}
+
+.upper-page8>.left h3{
+    font-weight: 200;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.upper-page8>.left button{
+    padding: 18px 20px;
+    background-color: transparent;
+    border: 1px solid #DEDBD2;
+    color: #DEDBD2;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.upper-page8>.left button:hover{
+    background-color: #DEDBD2;
+    color: #0e0e0e;
+}
+
+.upper-page8>.right{
+    display: flex;
+    gap: 40px;
+}
+
+.upper-page8>.right>.inner-left h4{
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+.upper-page8>.right>.inner-right{
+    display: flex;
+    flex-direction: column;
+}
+
+.upper-page8>.right>.inner-right a{
+    text-decoration: none;
+    color: #DEDBD2;
+    font-size: 14px;
+}
+
+.lower-page8{
+    height: 40vh;
+    color: #DEDBD2;
+    position: relative;
+    z-index: 1;
+    margin-top: -50px;
+}
+
+.lower-page8 h1{
+    font-size: 20vw;
+}
+
+.lower-page8 > h1 > span {
+  font-family: "rejouice headline";
+  display: inline-block;
+}
